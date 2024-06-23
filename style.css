@@ -1,0 +1,29 @@
+h1{
+    color:red;
+    text-align: center;
+  }
+  
+  .task{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #xxx{
+    display:grid;
+    justify-content: center;
+    background-color: lightblue;
+  
+  
+  }
+  
+  #xyz{
+    display:flex;
+    justify-content: center;
+  }
+  
+  #yyy{
+    position: fixed;
+    top:250px;
+    left:650px;
+    background-color: lightseagreen;
+  }
