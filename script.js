@@ -113,6 +113,7 @@ async function myFunction() {
             gg.classList.add("m");
 
         let stop = data2.data[dicky].stop
+        
 
 
 
@@ -151,15 +152,23 @@ async function myFunction() {
 
 
 
-
-
-
-
+                console.log(data2.data[dicky].seq)
+               
 
 
                 for(j in data4.data){
 
-                    if(data4.data[j].dir === "O"){
+                    
+              
+
+                    console.log(data4.data[j].seq)
+
+
+            
+
+                    if(data4.data[j].seq == data2.data[dicky].seq){
+
+
 
 
 
@@ -170,7 +179,8 @@ async function myFunction() {
 
 
 
-                    doo.innerText = [parseInt(j)+1] + "." + data3.data.name_tc +"\n" + data4.data[j].eta
+                    doo.innerText = [parseInt(j)+1] + "." + data3.data.name_tc +"\n" + data4.data[j].eta +
+                    `(${data4.data[j].rmk_tc})`
 
             document.getElementById("yyy").appendChild(doo).appendChild(xbutton)
 
@@ -260,24 +270,28 @@ async function myFunction() {
 
                 for(j in data4.data){
 
-                    if(data4.data[j].dir === "I"){
-
-
-
-                    let doo = document.createElement("div");
-
-                    doo.classList.add("d");
+                    if(data4.data[j].seq == data2.data[dicky].seq){
 
 
 
 
-            doo.innerText = [parseInt(j)+1] + "." + data3.data.name_tc +"\n" + data4.data[j].eta
-            document.getElementById("yyy").appendChild(doo).appendChild(xbutton)
 
-
-            xbutton.addEventListener("click",removefunction)
-
-            function removefunction(){
-                document.getElementById("yyy").removeChild(doo)
+                        let doo = document.createElement("div");
+    
+                        doo.classList.add("d");
+    
+    
+    
+    
+                        doo.innerText = [parseInt(j)+1] + "." + data3.data.name_tc +"\n" + data4.data[j].eta +
+                        `(${data4.data[j].rmk_tc})`
+    
+                document.getElementById("yyy").appendChild(doo).appendChild(xbutton)
+    
+    
+                xbutton.addEventListener("click",removefunction)
+    
+                function removefunction(){
+                    document.getElementById("yyy").removeChild(doo)
             }}
         }}}}}}
