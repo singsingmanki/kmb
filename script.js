@@ -159,6 +159,8 @@ async function myFunction() {
 
                 for(j in data4.data){
 
+                    if(data4.data[j].dir === "O"){
+
 
 
                     let doo = document.createElement("div");
@@ -177,7 +179,7 @@ async function myFunction() {
 
             function removefunction(){
                 document.getElementById("yyy").removeChild(doo)
-            }}}
+            }}}}
 
 
 
@@ -258,6 +260,8 @@ async function myFunction() {
 
                 for(j in data4.data){
 
+                    if(data4.data[j].dir === "I"){
+
 
 
                     let doo = document.createElement("div");
@@ -275,5 +279,5 @@ async function myFunction() {
 
             function removefunction(){
                 document.getElementById("yyy").removeChild(doo)
-            }
+            }}
         }}}}}}
