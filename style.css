@@ -1,29 +1,89 @@
-h1{
+.heading{
     color:red;
     text-align: center;
-  }
-  
-  .task{
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.task{
     display: flex;
     justify-content: center;
-  }
-  
-  #xxx{
+}
+
+#xxx{
     display:grid;
     justify-content: center;
-    background-color: lightblue;
-  
-  
-  }
-  
-  #xyz{
+    background-color: lightcoral;
+
+
+}
+
+#xyz{
     display:flex;
     justify-content: center;
-  }
-  
-  #yyy{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#yyy{
     position: fixed;
     top:250px;
     left:650px;
     background-color: lightseagreen;
-  }
+    display: block;
+    justify-content: space-around;
+  
+}
+
+#myBtn{
+    background-color: orangered;
+    color:white;
+    height:50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    padding:10px;
+}
+
+#lname{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-color: blue;
+    width:300px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+}
+
+.me{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left:5px;
+}
+
+.d{
+
+    font-size: 20px;
+}
+
+.d:hover{
+  background-color: pink;
+}
+
+.e{
+    background-color: blanchedalmond;
+    color: black;
+    padding:20px 20px 10px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+}
+
+.xbutton{
+    border-radius: 50px;
+    background-color: pink;
+    text-align: center;
+    color: red;
+}
