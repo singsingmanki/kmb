@@ -98,10 +98,21 @@ async function myFunction() {
 
                 xbutton.innerHTML = "X"
 
+                let zbutton = document.createElement("div");
 
+                zbutton.classList.add("zbutton")
 
+                zbutton.innerHTML = "預期到達時間" 
 
-    
+                document.getElementById("yyy").appendChild(zbutton).appendChild(xbutton)
+
+                xbutton.addEventListener("click",removefunction)
+
+                function removefunction(){
+
+                    document.getElementById("yyy").removeChild(zbutton)
+                }
+
                 for(j in data4.data){
 
                     console.log(data4.data[j].seq)
@@ -135,8 +146,11 @@ async function myFunction() {
 
             function removefunction(){
                 document.getElementById("yyy").removeChild(doo)
+    
             }}}}
         }
     }
+   
+    }}
    
     }}
