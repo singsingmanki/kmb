@@ -29,11 +29,12 @@
 
 #yyy{
     position: fixed;
-    top:250px;
-    left:650px;
+    top:200px;
+    left:600px;
     background-color: lightseagreen;
     display: block;
     justify-content: space-around;
+    width:300px;
   
 }
 
@@ -76,9 +77,10 @@
 .e{
     background-color: blanchedalmond;
     color: black;
-    padding:20px 20px 10px 20px;
+    padding:20px 30px 10px 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:20px;
+
 }
 
 .xbutton{
@@ -86,4 +88,11 @@
     background-color: pink;
     text-align: center;
     color: red;
+}
+
+.zbutton{
+    height: 50px;
+    font-size:20px;
+    padding: 10px 10px 0px 10px;
+
 }
