@@ -140,16 +140,13 @@ async function myFunction() {
                         gggg= ggg.toString().slice(11,19)
                         ggggg = parseInt(ggg.toString().slice(14,16))
 
-                        if(ggggg>noggg){
+                        if(ggggg>=noggg){
                             ccd = ggggg-noggg
                             
                             } else{
-                            ccd = noggg-ggggg
+                            ccd =  ggggg-noggg +60
                             }
 
-                        if(ggggg ==0){
-                            ccd = ggggg + 60 -noggg
-                        }
     
                         doo.innerText = [parseInt(cd)+1] + ") " + data3.data.name_tc +"\n" + gggg +"\n"+ ccd +
                         " 分鐘後到達"
