@@ -4,7 +4,7 @@ element.addEventListener("click", myFunction);
 
 async function myFunction() {
 
-    document.getElementById("xyz").innerHTML = '沒有這條路線';
+    document.getElementById("xyz").textContent = '沒有這條路線';
 
     document.getElementById("xxx").innerHTML = ""
 
@@ -36,9 +36,9 @@ async function myFunction() {
           document.getElementById("xyz").appendChild(xx)
 
           xx.addEventListener("click", xFunction)
+       
         } 
 
-     
 
           async function xFunction(){
 
@@ -83,6 +83,7 @@ async function myFunction() {
             document.getElementById("xxx").appendChild(door)
 
             door.addEventListener("click", zzFunction)
+
 
             async function zzFunction(){
 
@@ -132,12 +133,27 @@ async function myFunction() {
                     if(cd>=3){
                         cd=cd-3}
 
+                        let nogg = new Date();
+                        noggg = parseInt(nogg.toString().slice(19,21))
+                        
+                        let ggg = data4.data[j].eta
+                        gggg= ggg.toString().slice(11,19)
+                        ggggg = parseInt(ggg.toString().slice(14,16))
 
-                    let ggg = data4.data[j].eta
-                    gggg= ggg.toString().slice(11,18)
+                        if(ggggg>noggg){
+                            ccd = ggggg-noggg
+                            
+                            } else{
+                            ccd = noggg-ggggg
+                            }
 
-                    doo.innerText = [parseInt(cd)+1] + ") " + data3.data.name_tc +"\n" + gggg +
-                    +"\n"+"\n"  + `(${data4.data[j].rmk_tc})`  +"\n" +"\n" 
+                        if(ggggg ==0){
+                            ccd = ggggg + 60 -noggg
+                        }
+    
+                        doo.innerText = [parseInt(cd)+1] + ") " + data3.data.name_tc +"\n" + gggg +"\n"+ ccd +
+                        " 分鐘後到達"
+                        +"\n"  + `(${data4.data[j].rmk_tc})`  +"\n" +"\n" 
 
             document.getElementById("yyy").appendChild(doo).appendChild(xbutton)
 
