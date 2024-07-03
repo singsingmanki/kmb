@@ -1,11 +1,12 @@
 .heading{
-    color:red;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-decoration: underline;
+  color:red;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-decoration: underline;
 }
+
 
 .task{
     display: flex;
@@ -27,7 +28,7 @@
 }
 
 #yyy{
-    position: fixed;
+    position: absolute;
     top:200px;
     left:600px;
     background-color: lightseagreen;
@@ -80,7 +81,7 @@
 .e{
     background-color: blanchedalmond;
     color: black;
-    padding:20px 30px 10px 30px;
+    padding:20px 30px 0px 30px;
     font-size:20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -102,3 +103,6 @@
     color: darkblue;
 
 }
+
+
+
