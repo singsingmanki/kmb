@@ -103,7 +103,7 @@ async function myFunction() {
 
                 zbutton.classList.add("zbutton")
 
-                zbutton.innerHTML = "預期到達時間" 
+                zbutton.innerHTML = "預計到達時間" 
 
                 document.getElementById("yyy").appendChild(zbutton).appendChild(xbutton)
 
@@ -165,3 +165,4 @@ async function myFunction() {
     }
    
     }}
+
